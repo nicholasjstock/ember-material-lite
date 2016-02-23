@@ -8,6 +8,11 @@ export default Ember.Component.extend(ParentComponentSupport, {
   _primaryClassNameString: 'mdl-menu',
   icon: 'more_vert',
   text: '',
+  buttonIsColored: true,
+  buttonIsRaised: false,
+  buttonIsFloating: false,
+  buttonIsMiniFab: false,
+  buttonIsAccent: false,
   buttonClass: '',
   didInsertElement() {
     this._super(...arguments);
