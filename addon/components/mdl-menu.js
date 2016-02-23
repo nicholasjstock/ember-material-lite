@@ -8,6 +8,7 @@ export default Ember.Component.extend(ParentComponentSupport, {
   _primaryClassNameString: 'mdl-menu',
   icon: 'more_vert',
   text: '',
+  buttonClass: '',
   didInsertElement() {
     this._super(...arguments);
     const mdlmenu = new window.MaterialMenu(this.$('ul')[0]);
